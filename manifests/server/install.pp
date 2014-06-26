@@ -1,7 +1,7 @@
 #
 class mysql::server::install {
 
-  package { 'mysql-server':
+  package { 'mariadb-server':
     ensure => $mysql::server::package_ensure,
     name   => $mysql::server::package_name,
   }
